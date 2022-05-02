@@ -11,7 +11,7 @@ class DigitalOracle(EasyFrame):
         self.setResizable(False)
         imageLabel = self.addLabel(text="", row=0, column=0, sticky="NSEW")
         textLabel = self.addLabel(text="Your fortune is one click away!", row=1, column=0, sticky="NSEW")
-        # TODO: Insert button!
+        self.addButton(text="I think I'm ready...", row=2, column=0)
         # display splash image
         self.image = PhotoImage(file="tarot-card.gif")
         imageLabel["image"] = self.image
@@ -19,7 +19,6 @@ class DigitalOracle(EasyFrame):
         font = Font(family="Times New Roman", size=20, slant="italic")
         textLabel["font"] = font
         textLabel["foreground"] = "purple"
-        #
 
 def main():
     # Pops up window for app
@@ -27,3 +26,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# TODO: Find out how to style button and get rid of gray background
