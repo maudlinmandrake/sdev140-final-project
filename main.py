@@ -12,12 +12,12 @@ class DigitalOracle(EasyFrame):
         imageLabel = self.addLabel(text="", row=0, column=0, sticky="NSEW")
         textLabel = self.addLabel(text="Your fortune is one click away!", row=1, column=0, sticky="NSEW")
 
-    self.image = PhotoImage(file="tarot-card.gif")
-    imageLabel["image"] = self.image
+        self.image = PhotoImage(file="tarot-card.gif")
+        imageLabel["image"] = self.image
 
-    font = Font(family="Times New Roman", size=20, slant="italic")
-    textLabel["font"] = font
-    textLabel["foreground"] = "purple"
+        font = Font(family="Times New Roman", size=20, slant="italic")
+        textLabel["font"] = font
+        textLabel["foreground"] = "purple"
 
 def main():
     DigitalOracle().mainloop()
