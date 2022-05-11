@@ -13,16 +13,18 @@ class DigitalOracle(EasyFrame):
         textLabel = self.addLabel(text="Your fortune is one click away!", row=1, column=0, sticky="NSEW")
         self.addButton(text="I think I'm ready...", row=2, column=0)
         # display splash image
-        self.image = PhotoImage(file="tarot-card.gif")
+        self.image = PhotoImage(file="tarot-splash.gif")
         imageLabel["image"] = self.image
         # text label to display
         font = Font(family="Times New Roman", size=20, slant="italic")
         textLabel["font"] = font
         textLabel["foreground"] = "purple"
 
+
 def main():
     # Pops up window for app
     DigitalOracle().mainloop()
+
 
 if __name__ == "__main__":
     main()
