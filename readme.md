@@ -4,4 +4,5 @@ This is a little app that will do a tarot card reading for the user. No bells or
 
 ### Credits
 Keywords for tarot cards: [Labyrinthos.co](https://labyrinthos.co/)  
-Tarot illustration: <a href="https://www.flaticon.com/free-icons/tarot" title="tarot icons">Tarot icons created by Backwoods - Flaticon</a>
+Splash screen image: <a href="https://www.flaticon.com/free-icons/tarot" title="tarot icons">Backwoods for Flaticon</a>  
+Tarot cards: <a href="https://luciellaes.itch.io/rider-waite-smith-tarot-cards-cc0">Luciella Elisabeth Scarlett</a>
