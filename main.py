@@ -12,9 +12,9 @@ class DigitalOracle(EasyFrame):
         self.setResizable(False)
         imageLabel = self.addLabel(text="", row=0, column=0, sticky="NSEW")
         textLabel = self.addLabel(text="Your fortune is one click away!", row=1, column=0, sticky="NSEW")
-        self.addButton(text="I think I'm ready...", row=2, column=0)
+        self.addButton(text="Pull a card", row=2, column=0)
         # display splash image
-        self.image = PhotoImage(file="deck/00-TheFool.gif")
+        self.image = PhotoImage(file="tarot-splash.gif")
         imageLabel["image"] = self.image
         # text label to display
         font = Font(family="Times New Roman", size=20, slant="italic")

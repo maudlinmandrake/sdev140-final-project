@@ -488,4 +488,7 @@ def draw_card(deck):
 my_deck = tarot_deck()  # create a new deck
 my_card = draw_card(my_deck)  # draw a card from the newly created deck
 
-print(my_card)
+print(my_card['img'])
+print(my_card['title'])
+print(my_card['keywords'])
+
