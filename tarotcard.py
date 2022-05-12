@@ -391,86 +391,86 @@ def tarot_deck():
         },
 
         {
-            "img": "deck/Coins01.gif",
-            "title": "Ace of Coins",
+            "img": "deck/Pentacles01.gif",
+            "title": "Ace of Pentacles",
             "keywords": "Opportunity, Prosperity, New Venture"
         },
 
         {
-            "img": "deck/Coins02.gif",
-            "title": "Two of Coins",
+            "img": "deck/Pentacles02.gif",
+            "title": "Two of Pentacles",
             "keywords": "Balancing Decisions, Priorities, Adaptation"
         },
 
         {
-            "img": "deck/Coins03.gif",
-            "title": "Three of Coins",
+            "img": "deck/Pentacles03.gif",
+            "title": "Three of Pentacles",
             "keywords": "Teamwork, Collaboration, Building Together"
         },
 
         {
-            "img": "deck/Coins04.gif",
-            "title": "Four of Coins",
+            "img": "deck/Pentacles04.gif",
+            "title": "Four of Pentacles",
             "keywords": "Conservation, Security, Frugality"
         },
 
         {
-            "img": "deck/Coins05.gif",
-            "title": "Five of Coins",
+            "img": "deck/Pentacles05.gif",
+            "title": "Five of Pentacles",
             "keywords": "Need, Poverty, Insecurity"
         },
 
         {
-            "img": "deck/Coins06.gif",
-            "title": "Six of Coins",
+            "img": "deck/Pentacles06.gif",
+            "title": "Six of Pentacles",
             "keywords": "Charity, Generosity, Sharing"
         },
 
         {
-            "img": "deck/Coins07.gif",
-            "title": "Seven of Coins",
+            "img": "deck/Pentacles07.gif",
+            "title": "Seven of Pentacles",
             "keywords": "Hard Work, Perseverance, Diligence"
         },
 
         {
-            "img": "deck/Coins08.gif",
-            "title": "Eight of Coins",
+            "img": "deck/Pentacles08.gif",
+            "title": "Eight of Pentacles",
             "keywords": "Diligence, Passion, High Standards"
         },
 
         {
-            "img": "deck/Coins09.gif",
-            "title": "Nine of Coins",
+            "img": "deck/Pentacles09.gif",
+            "title": "Nine of Pentacles",
             "keywords": "Fruits of Labor, Reckless Spending, Rewards"
         },
 
         {
-            "img": "deck/Coins10.gif",
-            "title": "Ten of Coins",
+            "img": "deck/Pentacles10.gif",
+            "title": "Ten of Pentacles",
             "keywords": "Legacy, Inheritance, Culmination"
         },
 
         {
-            "img": "deck/Coins11.gif",
-            "title": "Page of Coins",
+            "img": "deck/Pentacles11.gif",
+            "title": "Page of Pentacles",
             "keywords": "Ambition, Desire, Diligence, Craving New Venture"
         },
 
         {
-            "img": "deck/Coins12.gif",
-            "title": "Knight of Coins",
+            "img": "deck/Pentacles12.gif",
+            "title": "Knight of Pentacles",
             "keywords": "Efficiency, Hard Work, Responsibility"
         },
 
         {
-            "img": "deck/Coins13.gif",
-            "title": "Queen of Coins",
+            "img": "deck/Pentacles13.gif",
+            "title": "Queen of Pentacles",
             "keywords": "Practicality, Creature Comforts, Security"
         },
 
         {
-            "img": "deck/Coins14.gif",
-            "title": "King of Coins",
+            "img": "deck/Pentacles14.gif",
+            "title": "King of Pentacles",
             "keywords": "Abundance, Prosperity, Provider"
         }
     ]
@@ -485,10 +485,7 @@ def draw_card(deck):
     return card
 
 
-my_deck = tarot_deck()  # create a new deck
-my_card = draw_card(my_deck)  # draw a card from the newly created deck
+my_deck = tarot_deck()
+my_card = draw_card(my_deck)
 
 print(my_card['img'])
-print(my_card['title'])
-print(my_card['keywords'])
-
