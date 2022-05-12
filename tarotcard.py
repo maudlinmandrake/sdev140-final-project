@@ -480,8 +480,8 @@ def tarot_deck():
 
 def draw_card(deck):
     """Draw a random card from our tarot deck"""
-    num = random.randint(0, 77)
-    card = deck[num]
+    num = random.randint(0, 77)  # choose a random number between 0-77
+    card = deck[num]  # assign number to a card in list
     return card
 
 
