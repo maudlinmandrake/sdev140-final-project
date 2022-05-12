@@ -27,7 +27,7 @@ class DigitalOracle(EasyFrame):
         # Style text
         font = Font(family="Times New Roman", size=20, slant="italic")
         self.textLabel["font"] = font
-        self.textLabel["foreground"] = "purple"
+        self.textLabel["foreground"] = "black"
 
     def pull_card(self):
         """Pull a card from the deck, display card, and give user some related keywords"""
