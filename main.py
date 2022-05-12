@@ -1,6 +1,7 @@
 from breezypythongui import EasyFrame
 from tkinter import PhotoImage
 from tkinter.font import Font
+import tarotcard
 
 
 class DigitalOracle(EasyFrame):
@@ -20,11 +21,6 @@ class DigitalOracle(EasyFrame):
         textLabel["font"] = font
         textLabel["foreground"] = "purple"
 
-    def get_fortune(self):
-        pass
-
-
-
 def main():
     # Pops up window for app
     DigitalOracle().mainloop()
@@ -33,4 +29,8 @@ def main():
 if __name__ == "__main__":
     main()
 
-# TODO: Find out how to style button and get rid of gray background
+# TODO: Button runs draw_card() from tarotcard
+# TODO: Once card chosen, data inside indicated index parsed to display card on second screen
+# TODO: New reading button
+# TODO: Exit app button
+# TODO: BONUS - refactor buttons to choose between one card and three card readings

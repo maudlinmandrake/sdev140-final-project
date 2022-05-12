@@ -1,5 +1,6 @@
 """
 File: tarotcard.py
+Create a tarot deck and pull cards from it at random
 """
 
 import random
@@ -482,6 +483,7 @@ def draw_card(deck):
     num = random.randint(0, 77)
     card = deck[num]
     return card
+
 
 my_deck = tarot_deck()
 my_card = draw_card(my_deck)
