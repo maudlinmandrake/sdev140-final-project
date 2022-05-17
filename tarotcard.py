@@ -7,7 +7,7 @@ import random
 
 
 def tarot_deck():
-    """Create a tarot deck saved to a list"""
+    """Create a tarot deck"""
     deck = [
         {
             "img": "deck/00-TheFool.gif",
@@ -484,8 +484,3 @@ def draw_card(deck):
     card = deck[num]  # assign number to a card in list
     return card
 
-
-my_deck = tarot_deck()
-my_card = draw_card(my_deck)
-
-print(my_card['img'])
