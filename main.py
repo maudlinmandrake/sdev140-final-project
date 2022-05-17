@@ -15,7 +15,7 @@ class DigitalOracle(EasyFrame):
         # CREATE TOP PANEL
         topPanel = self.addPanel(row=0, column=0)  # initialize top panel
         # contents of top panel
-        self.title = topPanel.addLabel(text="The Digital Oracle", row=0, column=0, columnspan=2, sticky="NSEW")
+        self.title = topPanel.addLabel(text="✨ The Digital Oracle ✨", row=0, column=0, columnspan=2, sticky="NSEW")
         self.imageLabel = topPanel.addLabel(text="", row=1, column=0, columnspan=2, sticky="NSEW")
         self.textLabel = topPanel.addLabel(text="Your future is one click away...", row=2, column=0, columnspan=2, sticky="NSEW")
 
