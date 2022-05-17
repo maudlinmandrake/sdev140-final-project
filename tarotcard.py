@@ -564,3 +564,12 @@ def draw_card(deck):
     card = deck[num]  # assign number to a card in list
     return card
 
+
+my_deck = tarot_deck()
+my_card = draw_card(my_deck)
+
+print(my_card['img'], "\n", my_card['title'], "\n", my_card['keywords'], "\n", my_card['alt'])
+
+
+
+
