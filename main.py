@@ -15,9 +15,9 @@ class DigitalOracle(EasyFrame):
         # CREATE TOP PANEL
         topPanel = self.addPanel(row=0, column=0)  # initialize top panel
         # contents of top panel
-        self.title = topPanel.addLabel(text="✨ The Digital Oracle ✨", row=0, column=0, columnspan=2, sticky="NSEW")
-        self.imageLabel = topPanel.addLabel(text="", row=1, column=0, columnspan=2, sticky="NSEW")
-        self.textLabel = topPanel.addLabel(text="Your future is one click away...", row=2, column=0, columnspan=2, sticky="NSEW")
+        self.title = topPanel.addLabel(text=" \n✨ The Digital Oracle ✨", row=0, column=0, columnspan=2, sticky="NSEW")
+        self.imageLabel = topPanel.addLabel(text="Three colorful tarot cards", row=1, column=0, columnspan=2, sticky="NSEW")
+        self.textLabel = topPanel.addLabel(text="Dare to peer into the 🔮", row=2, column=0, columnspan=2, sticky="NSEW")
 
         # load splash image & associate with image label
         self.splash = PhotoImage(file="tarot-splash.gif")
@@ -47,23 +47,26 @@ class DigitalOracle(EasyFrame):
         # Display card
         self.splash = PhotoImage(file=my_card['img'])  # reassign splash image to image of pulled card
         self.imageLabel["image"] = self.splash
+        self.imageLabel["text"] = my_card['alt']  # change alt text in image label to reflect the drawn card
 
         # Display name of card and related keywords
         self.title["text"] = my_card['title']  # reassign app title to card title
         self.textLabel["text"] = my_card['keywords']  # reassign flavor text to card keywords
 
-        # Return button to normal state
+        # Update 'draw' and 'back' buttons
+        self.drawButton["text"] = "Pull another card"
         self.backButton["state"] = "normal"  # restore button to normal, active state
 
     def go_back(self):
         """Restore screen to original state"""
-        self.title["text"] = "The Digital Oracle" # restore app title
+        self.title["text"] = " \n✨ The Digital Oracle ✨"  # restore app title
         self.splash = PhotoImage(file="tarot-splash.gif")  # restore splash image
         self.imageLabel["image"] = self.splash
 
+        self.drawButton["text"] = "Pull a card"
         self.backButton["state"] = "disabled"  # disable button
 
-        self.textLabel["text"] = "Your future is one click away..."  # restore original flavor text
+        self.textLabel["text"] = "Dare to peer into the 🔮"  # restore original flavor text
 
     def exit(self):
         """Exit the application"""
